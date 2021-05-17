@@ -1,4 +1,5 @@
 **/.terraform
 go.*
-rootkey.csv
+*.csv
 *.hcl
+terraform.*
