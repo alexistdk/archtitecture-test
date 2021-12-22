@@ -1,0 +1,5 @@
+**/.terraform
+go.*
+*.csv
+*.hcl
+terraform.*

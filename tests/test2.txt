@@ -1,0 +1,33 @@
+TestS3Bucket 2021-05-17T04:19:52-03:00 retry.go:91: terraform [init -upgrade=false]
+TestS3Bucket 2021-05-17T04:19:52-03:00 logger.go:66: Running command terraform with args [init -upgrade=false]
+TestS3Bucket 2021-05-17T04:19:52-03:00 logger.go:66: 
+TestS3Bucket 2021-05-17T04:19:52-03:00 logger.go:66: [0m[1mInitializing the backend...[0m
+TestS3Bucket 2021-05-17T04:19:52-03:00 logger.go:66: 
+TestS3Bucket 2021-05-17T04:19:52-03:00 logger.go:66: [0m[1mInitializing provider plugins...[0m
+TestS3Bucket 2021-05-17T04:19:52-03:00 logger.go:66: - Reusing previous version of hashicorp/aws from the dependency lock file
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: - Using previously-installed hashicorp/aws v3.40.0
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: 
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: [0m[32m
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: You may now begin working with Terraform. Try running "terraform plan" to see
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: any changes that are required for your infrastructure. All Terraform commands
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: should now work.
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: 
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: If you ever set or change modules or backend configuration for Terraform,
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: rerun this command to reinitialize your working directory. If you forget, other
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: commands will detect it and remind you to do so if necessary.[0m
+TestS3Bucket 2021-05-17T04:19:53-03:00 retry.go:91: terraform [apply -input=false -auto-approve -lock=false]
+TestS3Bucket 2021-05-17T04:19:53-03:00 logger.go:66: Running command terraform with args [apply -input=false -auto-approve -lock=false]
+TestS3Bucket 2021-05-17T04:20:00-03:00 logger.go:66: [0m[1maws_s3_bucket.bucket: Creating...[0m[0m
+TestS3Bucket 2021-05-17T04:20:10-03:00 logger.go:66: [0m[1maws_s3_bucket.bucket: Still creating... [10s elapsed][0m[0m
+TestS3Bucket 2021-05-17T04:20:13-03:00 logger.go:66: [0m[1maws_s3_bucket.bucket: Creation complete after 13s [id=sre-testing-bucket][0m[0m
+TestS3Bucket 2021-05-17T04:20:13-03:00 logger.go:66: [0m[1m[32m
+TestS3Bucket 2021-05-17T04:20:13-03:00 logger.go:66: Apply complete! Resources: 1 added, 0 changed, 0 destroyed.[0m
+TestS3Bucket 2021-05-17T04:20:13-03:00 retry.go:91: terraform [destroy -auto-approve -input=false -lock=false]
+TestS3Bucket 2021-05-17T04:20:13-03:00 logger.go:66: Running command terraform with args [destroy -auto-approve -input=false -lock=false]
+TestS3Bucket 2021-05-17T04:20:17-03:00 logger.go:66: [0m[1maws_s3_bucket.bucket: Destroying... [id=sre-testing-bucket][0m[0m
+TestS3Bucket 2021-05-17T04:20:18-03:00 logger.go:66: [0m[1maws_s3_bucket.bucket: Destruction complete after 1s[0m[0m
+TestS3Bucket 2021-05-17T04:20:18-03:00 logger.go:66: [0m[1m[32m
+TestS3Bucket 2021-05-17T04:20:18-03:00 logger.go:66: Destroy complete! Resources: 1 destroyed.[0m
+PASS
+ok  	github.com/alexistdk/archtitecture-test/tests	26.080s
